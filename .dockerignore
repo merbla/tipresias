@@ -55,7 +55,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-.env
+.env*
 .venv
 env/
 venv/
@@ -87,7 +87,6 @@ README.md
 deploy_rsa.enc
 .travis.yml
 .vscode
-*.sql
 data_science
 db/backups
 
@@ -100,3 +99,11 @@ db/backups
 # Cypress artifacts
 browser_test/cypress/screenshots/
 browser_test/cypress/videos/
+
+# DB dumps
+*.sql
+
+# Secrets
+*_rsa
+keyfile.json
+secrets.tar

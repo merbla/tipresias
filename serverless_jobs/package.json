@@ -1,0 +1,16 @@
+{
+  "name": "tipresias",
+  "version": "0.1.0",
+  "description": "",
+  "main": "handler.py",
+  "scripts": {},
+  "author": "serverless.com",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "1.71.3",
+    "serverless-offline": "^5.12.1"
+  },
+  "dependencies": {
+    "serverless-python-requirements": "^5.1.0"
+  }
+}

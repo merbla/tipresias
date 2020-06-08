@@ -13,6 +13,9 @@ sendgrid>=6.0,<6.99
 requests
 joblib
 gunicorn
+redis
+rq
+django-rq
 
 # Browser automation
 splinter==0.13.0

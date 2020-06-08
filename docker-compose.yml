@@ -10,6 +10,7 @@ services:
     tty: true
     depends_on:
       - db
+      - redis
     env_file: .env
     environment:
       - DJANGO_SETTINGS_MODULE=${DJANGO_SETTINGS_MODULE:-project.settings.development}
@@ -53,6 +54,8 @@ services:
     image: postgres:11.6
     environment:
       - POSTGRES_DB=$DATABASE_NAME
+  redis:
+    image: redis:6.0.4-alpine
 volumes:
   tipresias_node_modules:
     external: true

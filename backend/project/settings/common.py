@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_rq",
 ]
 
 GRAPHENE = {"SCHEMA": "server.graphql.schema"}
@@ -84,6 +85,10 @@ DATABASES = {
         "PASSWORD": "",
         "PORT": 5432,
     }
+}
+
+RQ_QUEUES = {
+    "default": {"HOST": "redis", "PORT": 6379, "DB": 0, "DEFAULT_TIMEOUT": 1200},
 }
 
 
